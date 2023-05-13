@@ -6,18 +6,7 @@ const AnimalShow = () => {
   const [animals, setAnimals] = useState([]);
 
   const generateRandomAnimal = () => {
-    const animals = [
-      "bird",
-      "cat",
-      "cow",
-      "dog",
-      "gator",
-      "horse",
-      "duck",
-      "donkey",
-      "chimp",
-      "lion",
-    ];
+    const animals = ["bird", "cat", "cow", "dog", "gator", "horse"];
     return animals[Math.floor(Math.random() * animals.length)];
   };
 
@@ -31,7 +20,7 @@ const AnimalShow = () => {
         Add Animal
       </button>
 
-      <div>
+      <div className="animalShow__animal-list">
         {animals.map((animal, index) => {
           return <Animal type={animal} key={index} />;
         })}
