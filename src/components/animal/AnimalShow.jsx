@@ -6,7 +6,18 @@ const AnimalShow = () => {
   const [animals, setAnimals] = useState([]);
 
   const generateRandomAnimal = () => {
-    const animals = ["bird", "cat", "cow", "dog", "gator", "horse"];
+    const animals = [
+      "bird",
+      "cat",
+      "cow",
+      "dog",
+      "gator",
+      "horse",
+      "duck",
+      "donkey",
+      "chimp",
+      "lion",
+    ];
     return animals[Math.floor(Math.random() * animals.length)];
   };
 
